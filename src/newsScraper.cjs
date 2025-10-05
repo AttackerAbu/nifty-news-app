@@ -2,7 +2,7 @@
 const { XMLParser } = require('fast-xml-parser');
 
 const SYMBOLS = (process.env.NIFTY_SYMBOLS || "").split(',').map(s => s.trim()).filter(Boolean);
-const DEFAULT_SYMBOLS = SYMBOLS.length ? SYMBOLS : require('./symbols').NIFTY100;
+const DEFAULT_SYMBOLS = SYMBOLS.length ? SYMBOLS : require('./symbols.cjs').NIFTY100;
 
 const REFRESH_INTERVAL_MS = Number(process.env.REFRESH_INTERVAL_MS || 120000); // 2 min
 const parser = new XMLParser({ ignoreAttributes: false });
