@@ -1,8 +1,9 @@
 {
   "name": "nifty-news-backend",
   "version": "1.0.0",
-  "description": "NIFTY Morning Day-Trading Assistant backend (Render-ready) \u2014 Google News RSS + Zerodha SSE",
+  "description": "NIFTY Morning Day-Trading Assistant backend (Render-ready) — Google News RSS + Zerodha SSE",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node server.js"
   },
@@ -10,9 +11,10 @@
     "node": ">=18"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "fast-xml-parser": "^4.4.0",
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "kiteconnect": "^4.2.0"
   }
 }
-{ "type": "module", "scripts": { "start": "node server.mjs" } }
