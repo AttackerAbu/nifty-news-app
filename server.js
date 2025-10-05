@@ -13,8 +13,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // ---- Import CJS helpers from ./src
-const { startQuotesSSE, startMockIfEnabled, priceCache } = require('./src/quotes.js');
-const { getNewsFor, warmNewsCache, buildCallsFromNews }  = require('./src/newsScraper.js');
+const { startQuotesSSE, startMockIfEnabled, priceCache } = require('./src/quotes.cjs');
+const { getNewsFor, warmNewsCache, buildCallsFromNews }  = require('./src/newsScraper.cjs');
 
 // ---- Config
 const app               = express();
